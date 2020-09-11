@@ -9,13 +9,13 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <div className="container">
-        <switch>
+        <Switch>
           <Route exact path="/" component={Top} />
           <Route path="/quiz" component={Quiz} />
-          <Route render={()=> <h4>not found...</h4>} />
-        </switch>
+          <Route render={() => <h4>not found...</h4>} />
+        </Switch>
       </div>
-  </BrowserRouter>
+    </BrowserRouter>
   );
 }
 
